@@ -52,7 +52,7 @@ static const float sensitive = 0.77;
         
         [_motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue]
                                             withHandler: ^(CMDeviceMotion *motion, NSError *error){
-                                                [self performSelectorOnMainThread:@selector(deviceMotion:) withObject:motion waitUntilDone:YES];
+                                                [self performSelectorOnMainThread:@selector(deviceMotion:) withObject:motion waitUntilDone:NO];
                                             }];
     }
 }

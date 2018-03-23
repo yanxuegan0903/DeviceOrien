@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    deviceMotion = [[DeviceOrientation alloc]initWithDelegate:self];
+    deviceMotion = [[DeviceOrientation alloc] initWithDelegate:self];
 }
 
 - (IBAction)startMonitor:(id)sender {
